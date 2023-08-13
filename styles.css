@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --cor-nav: #DFCCFB;
+    --font-nav: 'PT Sans Narrow', sans-serif;
+    --fonte-titu: 'Roboto', sans-serif;
+}
+
+/*começo navegação*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px;
+    align-items: center;
+    background-color: var(--cor-nav);
+    font-family: var(--font-nav);
+}
+
+header img {
+    height: 60px;
+}
+
+header h1 {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+header li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 5px
+
+}
+
+header a:hover {
+    background-color: rgb(111, 109, 109);
+    color: white;
+    border-radius: 5px;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+}
+
+.material-symbols-outlined {
+  margin-right: 5px;
+}
+
+
+/*começo banner*/
+
+
+.banner-principal {
+    background-image: url(img/banner1.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner h2 {
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-size: 44px;
+    font-family: var(--fonte-titu);
+}
+
+.banner h3{
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(216, 213, 213);
+    font-family: var(--fonte-titu);
+    font-size: 20px;
+}
+
+.banner p{
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+
+/*começo pesquisa*/
+
+.banner-pesquisa {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.banner-pesquisa ::placeholder {
+    text-align: center;
+}
+
+.banner-pesquisa input{
+    height: 70px;
+    width: 20%;
+    border: none;
+    font-size: 20px;
+    border: none;
+}
+
+.banner-pesquisa input:hover{
+    border: 5px solid orange;
+}
+
+
+
+/*começo sobre*/
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+
+.titulo {
+    text-align: center;
+    font-family: var(--fonte-titu);
+    padding-top: 15px;
+}
+
+.sobre p {
+    width: 40%;
+    font-size: 20px;
+}
+
+.sobre img  {
+    height: 70vh;
+    margin-left: 10px;
+}
+
+
+/*começo carros*/
+
+
+.carros {
+    width: 1300px;
+    height: 90vh;
+    text-decoration: none;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+
+.carros img{
+    width: 100%;
+}
+
+.carros-caixa{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+} 
+
+.carros-lista {
+    margin: 10px;  
+    border: none;  
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 350px;
+    cursor: pointer;
+}
+
+.carros-lista:hover  {
+    border: 1px solid orangered;
+}
+
+.carro-titulo {
+    font-family: var(--fonte-titu);
+    text-align: center;
+    padding: 5px;
+}
+
+.carros-lista span{
+    font-size: 18px;
+    margin-right: 10px;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(239, 152, 120);
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.carro-link, .enviar button  {
+    text-align: center;
+    font-family: var(--font-nav);
+    color: white;
+    background-color: rgb(244, 170, 32);
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.carro-link:hover, .enviar button:hover  {
+    background-color: rgb(255, 128, 0);
+    color: black;
+    transition: 1s;
+
+}
+
+
+/*começo formulario*/
+ 
+
+.enviar {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 0;
+    padding: 20px 0 0 0;
+    height: 90vh;
+    width: 100%;
+}
+
+.enviar p {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 20px;
+
+}
+
+.enviar form, .formu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.enviar input, .enviar button, .enviar textarea {
+    width: 40%;
+    margin: 20px auto;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.enviar input:active {
+    color: rgb(255, 128, 0);
+}
+
+.enviar textarea {
+    height: 100px;
+}
+
+.enviar button {
+    margin-bottom: 20px;
+}
+
+/*começo footer*/
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: var(--cor-nav);
+    font-size: 20px;
+}
+
+footer img {
+    height: 80px;
+}
